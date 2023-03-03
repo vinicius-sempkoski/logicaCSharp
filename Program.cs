@@ -1,21 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Input;
-namespace WindowsFormsApplication1
+using System.Globalization;
+
+namespace EntradaDeDados
 {
-    static class Program
+    internal class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-            MessageBox.Show("Ola Mundo!!!");
+            string s = Console.ReadLine();
+            string[] v = Console.ReadLine().Split(' ');
+            string[] v1 = s.Split(' ');
+            string a = v1[0];
+            string b = v1[1];
+            string c = v1[2];
+            string d = v[0];
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
+            Console.WriteLine(d);
         }
     }
 }
