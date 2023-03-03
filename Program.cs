@@ -1,28 +1,21 @@
 ﻿using System;
-
-namespace Exercicio2For
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Input;
+namespace WindowsFormsApplication1
 {
-    internal class Program
+    static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            int num, c = 0, f = 0, num1;
-            Console.WriteLine("Digite um numero inteiro:");
-            num = int.Parse(Console.ReadLine());
-
-            for (int i = 0; i < num; i++)
-            {
-                num1 = int.Parse(Console.ReadLine());
-                if (num1 >= 10 && num1 <= 20)
-                {
-                    f++;
-                }
-                else
-                {
-                    c++;
-                }
-            }
-            Console.WriteLine($"\n{f} in\n{c} out");
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Form1());
+            MessageBox.Show("Ola Mundo!!!");
         }
     }
 }
